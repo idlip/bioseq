@@ -1,7 +1,4 @@
 ^LICENSE\.md$
-^\.direnv/flake-inputs/
-^\.direnv/.*
-^\.direnv/bin/nix-direnv-reload
-\.envrc
-flake*
+^flake*
 Readme.org
+bioseq_.*tar.gz
