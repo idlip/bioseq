@@ -1,0 +1,38 @@
+#+title: Bioseq: A basic package on sequences
+#+author: Dilip
+#+language: En
+
+Note: This is very simple and basic package, purely as my kick-starter code for working on creating a package.
+
+** Installation
+- Option 1 via devtools
+#+begin_src sh
+R
+#+end_src
+  - In R interface of your choice
+#+begin_src R
+install.packages("devtools")
+library(devtools)
+
+install.github("idlip/bioseq")
+library(bioseq)
+#+end_src
+- Option 2 via =tar.gz= or =zip= file from this Git repo.
+#+begin_src R
+install.packages("<path/to/bioseq>.tar.gz", repos=NULL)
+#+end_src
+** Usage
+- For any function, you can list them =bioseq::<tab>= by hitting tab.
+- You can refer for documentation/man page via =?bioseq=, =?bioseq_complement=...
+*** [[file:R/seq-arg.R::67][bioseq()]]
+- An interactive function with no arguments required.
+- It prompts for user to input DNA sequence data, and provides option to give All (A) details, Complementary (C), Transcript (T) or Reverse (R) complement.
+*** [[file:R/seq-arg.R::12][bioseq_complement(seq)]]
+- Takes 1 argument as DNA sequence and give the return value as characters of *complementary strand*.
+*** [[file:R/seq-arg.R::37][bioseq_rcomplement(seq)]]
+- Takes 1 argument as DNA sequence and provide the *reverse complement* of it.
+*** [[file:R/seq-arg.R::53][bioseq_transcribe(seq)]]
+- Takes 1 argument as DNA sequence and return the *mRna* transcript of the sequence.
+** Plans [0/2]
+- [ ] Make the package DNA agnostic, so it works on RNA and also protein sequence.
+- [ ] Add more basic functions to get minimal things done.
