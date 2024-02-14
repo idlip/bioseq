@@ -1,0 +1,7 @@
+^LICENSE\.md$
+^\.direnv/flake-inputs/
+^\.direnv/.*
+^\.direnv/bin/nix-direnv-reload
+\.envrc
+flake*
+Readme.org
