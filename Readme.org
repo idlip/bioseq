@@ -7,15 +7,15 @@ Note: This is very simple and basic package, purely as my kick-starter code for 
 ** Installation
 - Option 1 via devtools
 #+begin_src sh
-R
+$ R
 #+end_src
   - In R interface of your choice
 #+begin_src R
-install.packages("devtools")
-library(devtools)
+> install.packages("devtools")
+> library(devtools)
 
-install.github("idlip/bioseq")
-library(bioseq)
+> install.github("idlip/bioseq")
+> library(bioseq)
 #+end_src
 - Option 2 via =tar.gz= or =zip= file from this Git repo.
 #+begin_src R
