@@ -1,0 +1,11 @@
+Package: bioseq
+Title: Basic Package on Sequences
+Version: 0.1
+Authors@R:
+    person("Dilip", "G"), comment = c())
+Description: Set of functions to work on basic sequences and provide interactive feedback.
+License: MIT + file LICENSE
+BugReports: https://github.com/idlip/bioseq/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
